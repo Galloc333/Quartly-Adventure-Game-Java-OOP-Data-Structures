@@ -1,0 +1,32 @@
+/**
+ * Exception indicating that the direction in a room is already occupied.
+ */
+public class DirectionIsOccupied extends RuntimeException {
+
+    /**
+     * Constructs a DirectionIsOccupied with no detail message.
+     */
+    public DirectionIsOccupied() {
+        super();
+    }
+
+    /**
+     * Constructs a DirectionIsOccupied with the specified detail message.
+     *
+     * @param message the detail message (which is saved for later retrieval by the getMessage() method).
+     */
+    public DirectionIsOccupied(String message) {
+        super(message);
+    }
+
+    /**
+     * Constructs a DirectionIsOccupied with the specified detail message and cause.
+     *
+     * @param message the detail message (which is saved for later retrieval by the getMessage() method).
+     * @param cause   the cause (which is saved for later retrieval by the getCause() method).
+     */
+    public DirectionIsOccupied(String message, Throwable cause) {
+        super(message, cause);
+    }
+}
+
